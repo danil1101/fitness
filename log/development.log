@@ -1,0 +1,201 @@
+Started GET "/" for 127.0.0.1 at 2023-06-06 18:05:19 +0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 1.7ms | Allocations: 548)
+Completed 200 OK in 27ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 10564)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-06 18:05:45 +0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 63.9ms | Allocations: 73765)
+Completed 200 OK in 80ms (Views: 69.0ms | ActiveRecord: 0.0ms | Allocations: 80933)
+
+
+Started GET "/asstes/1/tilda-stat-1.0.min.js" for 127.0.0.1 at 2023-06-06 18:05:45 +0300
+Started GET "/asstes/1/tilda-grid-3.0.min.css" for 127.0.0.1 at 2023-06-06 18:05:45 +0300
+Started GET "/asstes/1/tilda-zero-gallery-1.0.min.css" for 127.0.0.1 at 2023-06-06 18:05:45 +0300
+Started GET "/asstes/1/tilda-animation-2.0.min.css" for 127.0.0.1 at 2023-06-06 18:05:45 +0300
+Started GET "/asstes/1/tilda-slds-1.4.min.css" for 127.0.0.1 at 2023-06-06 18:05:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-grid-3.0.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-stat-1.0.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-animation-2.0.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-slds-1.4.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-zero-gallery-1.0.min.css"):
+  
+Started GET "/asstes/1/tilda-zoom-2.0.min.css" for 127.0.0.1 at 2023-06-06 18:05:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-zoom-2.0.min.css"):
+  
+Started GET "/asstes/1/custom.css" for 127.0.0.1 at 2023-06-06 18:05:46 +0300
+Started GET "/asstes/1/css2" for 127.0.0.1 at 2023-06-06 18:05:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/css2"):
+  
+Started GET "/asstes/1/main.css" for 127.0.0.1 at 2023-06-06 18:05:46 +0300
+Started GET "/asstes/1/livechat.css" for 127.0.0.1 at 2023-06-06 18:05:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/custom.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/main.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/livechat.css"):
+  
+Started GET "/asstes/1/keyframes.css" for 127.0.0.1 at 2023-06-06 18:05:46 +0300
+Started GET "/asstes/1/jquery-1.10.2.min.js" for 127.0.0.1 at 2023-06-06 18:05:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/jquery-1.10.2.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/keyframes.css"):
+  
+Started GET "/asstes/1/tag.js" for 127.0.0.1 at 2023-06-06 18:05:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tag.js"):
+  
+Started GET "/asstes/1/tilda-blocks-page29388744.min.css" for 127.0.0.1 at 2023-06-06 18:05:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-blocks-page29388744.min.css"):
+  
+Started GET "/asstes/1/js" for 127.0.0.1 at 2023-06-06 18:05:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/js"):
+  
+Started GET "/asstes/1/tilda-fallback-1.0.min.js" for 127.0.0.1 at 2023-06-06 18:05:47 +0300
+Started GET "/asstes/1/gtm.js" for 127.0.0.1 at 2023-06-06 18:05:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/gtm.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-fallback-1.0.min.js"):
+  
+Started GET "/asstes/1/tilda-blocks-page29388744.min.js" for 127.0.0.1 at 2023-06-06 18:05:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-blocks-page29388744.min.js"):
+  
+Started GET "/asstes/1/lazyload-1.3.min.js" for 127.0.0.1 at 2023-06-06 18:05:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/lazyload-1.3.min.js"):
+  
+Started GET "/asstes/1/logobtf.png" for 127.0.0.1 at 2023-06-06 18:05:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/logobtf.png"):
+  
+Started GET "/asstes/1/tilda-animation-2.0.min.js" for 127.0.0.1 at 2023-06-06 18:05:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-animation-2.0.min.js"):
+  
+Started GET "/asstes/1/tilda-zero-1.1.min.js" for 127.0.0.1 at 2023-06-06 18:05:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-zero-1.1.min.js"):
+  
+Started GET "/asstes/1/tilda-zero-gallery-1.0.min.js" for 127.0.0.1 at 2023-06-06 18:05:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-zero-gallery-1.0.min.js"):
+  
+Started GET "/asstes/1/tilda-slds-1.4.min.js" for 127.0.0.1 at 2023-06-06 18:05:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-slds-1.4.min.js"):
+  
+Started GET "/asstes/1/hammer.min.js" for 127.0.0.1 at 2023-06-06 18:05:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/hammer.min.js"):
+  
+Started GET "/asstes/1/tilda-zoom-2.0.min.js" for 127.0.0.1 at 2023-06-06 18:05:49 +0300
+Started GET "/asstes/1/tilda-zero-scale-1.0.min.js" for 127.0.0.1 at 2023-06-06 18:05:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-zero-scale-1.0.min.js"):
+  
+Started GET "/asstes/1/tilda-events-1.0.min.js" for 127.0.0.1 at 2023-06-06 18:05:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-zoom-2.0.min.js"):
+  
+Started GET "/asstes/1/button.js" for 127.0.0.1 at 2023-06-06 18:05:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-events-1.0.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/button.js"):
+  
+Started GET "/asstes/1/openapi.js" for 127.0.0.1 at 2023-06-06 18:05:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/openapi.js"):
+  
+Started GET "/asstes/1/__.png" for 127.0.0.1 at 2023-06-06 18:05:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/__.png"):
+  
+Started GET "/asstes/1/maestro.svg" for 127.0.0.1 at 2023-06-06 18:05:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/maestro.svg"):
+  
+Started GET "/asstes/1/mc.svg" for 127.0.0.1 at 2023-06-06 18:05:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/mc.svg"):
+  
+Started GET "/asstes/1/mir.svg" for 127.0.0.1 at 2023-06-06 18:05:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/mir.svg"):
+  
+Started GET "/asstes/1/pay-pal.svg" for 127.0.0.1 at 2023-06-06 18:05:50 +0300
+Started GET "/asstes/1/visa.svg" for 127.0.0.1 at 2023-06-06 18:05:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/visa.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/pay-pal.svg"):
+  
+Started GET "/asstes/1/qiwi.svg" for 127.0.0.1 at 2023-06-06 18:05:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/qiwi.svg"):
+  
+Started GET "/asstes/1/photo_2022-07-29_174.png" for 127.0.0.1 at 2023-06-06 18:05:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/photo_2022-07-29_174.png"):
+  
+Started GET "/asstes/1/noroot(1).png" for 127.0.0.1 at 2023-06-06 18:05:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/noroot(1).png"):
+  
+Started GET "/asstes/1/noroot(2).png" for 127.0.0.1 at 2023-06-06 18:05:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/noroot(2).png"):
+  
+Started GET "/asstes/1/noroot(3).png" for 127.0.0.1 at 2023-06-06 18:05:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/noroot(3).png"):
+  
+Started GET "/asstes/1/tilda-scripts-3.0.min.js" for 127.0.0.1 at 2023-06-06 18:05:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tilda-scripts-3.0.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-06 18:06:57 +0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 93.4ms | Allocations: 73765)
+Completed 200 OK in 129ms (Views: 100.2ms | ActiveRecord: 0.0ms | Allocations: 80933)
+
+
+Started GET "/asstes/1/css2" for 127.0.0.1 at 2023-06-06 18:06:57 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/css2"):
+  
+Started GET "/asstes/1/tag.js.map" for 127.0.0.1 at 2023-06-06 18:06:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tag.js.map"):
+  
+Started GET "/asstes/1/tag.js.map" for 127.0.0.1 at 2023-06-06 18:06:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/asstes/1/tag.js.map"):
+  
