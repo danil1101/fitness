@@ -81,10 +81,7 @@
 			async=""
 			src="./assets/2/events.js.Без названия"
 		></script>
-		<script
-			async=""
-			src="https://connect.facebook.net/en_US/fbevents.js"
-		></script>
+
 		<script
 			src="./assets/2/tilda-fallback-1.0.min.js.Без названия"
 			charset="utf-8"
@@ -139,7 +136,7 @@
 		<script type="text/javascript">
 			;(function (d) {
 				if (!d.visibilityState) {
-					var s = d.createElement('script')
+					let s = d.createElement('script')
 					s.src = 'https://static.tildacdn.com/js/tilda-polyfill-1.0.min.js'
 					d.getElementsByTagName('head')[0].appendChild(s)
 				}
@@ -161,23 +158,23 @@
 				}
 			}
 			function t396_initialScale(t) {
-				var e = document.getElementById('rec' + t)
+				let e = document.getElementById('rec' + t)
 				if (e) {
-					var r = e.querySelector('.t396__artboard')
+					let r = e.querySelector('.t396__artboard')
 					if (r) {
-						var a,
+						let a,
 							i = document.documentElement.clientWidth,
 							l = [],
 							d = r.getAttribute('data-artboard-screens')
 						if (d) {
 							d = d.split(',')
-							for (var o = 0; o < d.length; o++) l[o] = parseInt(d[o], 10)
+							for (let o = 0; o < d.length; o++) l[o] = parseInt(d[o], 10)
 						} else l = [320, 480, 640, 960, 1200]
 						for (o = 0; o < l.length; o++) {
-							var n = l[o]
+							let n = l[o]
 							n <= i && (a = n)
 						}
-						var g = 'edit' === window.allrecords.getAttribute('data-tilda-mode'),
+						let g = 'edit' === window.allrecords.getAttribute('data-tilda-mode'),
 							u = 'center' === t396_getFieldValue(r, 'valign', a, l),
 							c = 'grid' === t396_getFieldValue(r, 'upscale', a, l),
 							t = t396_getFieldValue(r, 'height_vh', a, l),
@@ -188,7 +185,7 @@
 								-1 !== navigator.userAgent.indexOf(' OPR/')
 						if (!g && u && !c && !t && f && !e) {
 							for (
-								var s = parseFloat((i / a).toFixed(3)),
+								let s = parseFloat((i / a).toFixed(3)),
 									_ = [
 										r,
 										r.querySelector('.t396__carrier'),
@@ -199,21 +196,21 @@
 								o++
 							)
 								_[o].style.height = parseInt(f, 10) * s + 'px'
-							for (var h = r.querySelectorAll('.t396__elem'), o = 0; o < h.length; o++)
+							for (let h = r.querySelectorAll('.t396__elem'), o = 0; o < h.length; o++)
 								h[o].style.zoom = s
 						}
 					}
 				}
 			}
 			function t396_getFieldValue(t, e, r, a) {
-				var i = a[a.length - 1],
+				let i = a[a.length - 1],
 					l =
 						r === i
 							? t.getAttribute('data-artboard-' + e)
 							: t.getAttribute('data-artboard-' + e + '-res-' + r)
 				if (!l)
-					for (var d = 0; d < a.length; d++) {
-						var o = a[d]
+					for (let d = 0; d < a.length; d++) {
+						let o = a[d]
 						if (
 							!(o <= r) &&
 							(l =
@@ -285,141 +282,11 @@
 			charset="utf-8"
 			async=""
 		></script>
-		<meta
-			name="facebook-domain-verification"
-			content="haprjy573fmkufton1qcgf5lxm1gu7"
-		/>
-		<meta name="yandex-verification" content="826e7e06b06133a1" />
-		<meta
-			name="google-site-verification"
-			content="IGACqmwQGaehkRcgIXHwnGLA0GNGievohU-XZz5iZ5k"
-		/>
-
-		<!-- Facebook Pixel Code -->
-		<script>
-			!(function (f, b, e, v, n, t, s) {
-				if (f.fbq) return
-				n = f.fbq = function () {
-					n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-				}
-				if (!f._fbq) f._fbq = n
-				n.push = n
-				n.loaded = !0
-				n.version = '2.0'
-				n.queue = []
-				t = b.createElement(e)
-				t.async = !0
-				t.src = v
-				s = b.getElementsByTagName(e)[0]
-				s.parentNode.insertBefore(t, s)
-			})(
-				window,
-				document,
-				'script',
-				'https://connect.facebook.net/en_US/fbevents.js'
-			)
-			fbq('init', '732152537407798')
-			fbq('track', 'PageView')
-		</script>
-		<noscript
-			><img
-				height="1"
-				width="1"
-				style="display: none"
-				src="https://www.facebook.com/tr?id=732152537407798&ev=PageView&noscript=1"
-		/></noscript>
-		<!-- End Facebook Pixel Code -->
-		<script>
-			!(function (w, d, t) {
-				w.TiktokAnalyticsObject = t
-				var ttq = (w[t] = w[t] || [])
-				;(ttq.methods = [
-					'page',
-					'track',
-					'identify',
-					'instances',
-					'debug',
-					'on',
-					'off',
-					'once',
-					'ready',
-					'alias',
-					'group',
-					'enableCookie',
-					'disableCookie',
-				]),
-					(ttq.setAndDefer = function (t, e) {
-						t[e] = function () {
-							t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
-						}
-					})
-				for (var i = 0; i < ttq.methods.length; i++)
-					ttq.setAndDefer(ttq, ttq.methods[i])
-				;(ttq.instance = function (t) {
-					for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
-						ttq.setAndDefer(e, ttq.methods[n])
-					return e
-				}),
-					(ttq.load = function (e, n) {
-						var i = 'https://analytics.tiktok.com/i18n/pixel/events.js'
-						;(ttq._i = ttq._i || {}),
-							(ttq._i[e] = []),
-							(ttq._i[e]._u = i),
-							(ttq._t = ttq._t || {}),
-							(ttq._t[e] = +new Date()),
-							(ttq._o = ttq._o || {}),
-							(ttq._o[e] = n || {})
-						n = document.createElement('script')
-						;(n.type = 'text/javascript'),
-							(n.async = !0),
-							(n.src = i + '?sdkid=' + e + '&lib=' + t)
-						e = document.getElementsByTagName('script')[0]
-						e.parentNode.insertBefore(n, e)
-					})
-
-				ttq.load('C8321I5MTNIMB7MMT7N0')
-				ttq.page()
-			})(window, document, 'ttq')
-		</script>
 
 		<script type="text/javascript">
 			window.dataLayer = window.dataLayer || []
 		</script>
-		<!-- Google Tag Manager -->
-		<script type="text/javascript">
-			;(function (w, d, s, l, i) {
-				w[l] = w[l] || []
-				w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
-				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s),
-					dl = l != 'dataLayer' ? '&l=' + l : ''
-				j.async = true
-				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
-				f.parentNode.insertBefore(j, f)
-			})(window, document, 'script', 'dataLayer', 'GTM-MMMWPWD')
-		</script>
-		<!-- End Google Tag Manager -->
-		<!-- VK Pixel Code -->
-		<script type="text/javascript" data-tilda-cookie-type="advertising">
-			setTimeout(function () {
-				!(function () {
-					var t = document.createElement('script')
-					;(t.type = 'text/javascript'),
-						(t.async = !0),
-						(t.src = 'https://vk.com/js/api/openapi.js?161'),
-						(t.onload = function () {
-							VK.Retargeting.Init('VK-RTRG-196493-ffs9x'), VK.Retargeting.Hit()
-						}),
-						document.head.appendChild(t)
-				})()
-			}, 2000)
-		</script>
-		<!-- End VK Pixel Code -->
-		<script
-			async=""
-			id="amo_social_button_script"
-			src="./assets/2/button.js.Без названия"
-		></script>
+
 		<style class="sbs-anim-keyframes">
 			.t-sbs-anim_started #sbs-529430362-1671528506556 {
 				animation: sbs-529430362-1671528506556 1s infinite linear;
@@ -682,53 +549,7 @@
 					data-animationappear="off"
 					data-record-type="131"
 					data-bg-color="#1f1f1f"
-				>
-					<!-- T123 -->
-					<div class="t123">
-						<div class="t-container_100">
-							<div class="t-width t-width_100">
-								<!-- Yandex.Metrika counter -->
-								<script type="text/javascript">
-									;(function (m, e, t, r, i, k, a) {
-										m[i] =
-											m[i] ||
-											function () {
-												;(m[i].a = m[i].a || []).push(arguments)
-											}
-										m[i].l = 1 * new Date()
-										;(k = e.createElement(t)),
-											(a = e.getElementsByTagName(t)[0]),
-											(k.async = 1),
-											(k.src = r),
-											a.parentNode.insertBefore(k, a)
-									})(
-										window,
-										document,
-										'script',
-										'https://mc.yandex.ru/metrika/tag.js',
-										'ym'
-									)
-
-									ym(51944414, 'init', {
-										clickmap: true,
-										trackLinks: true,
-										accurateTrackBounce: true,
-										webvisor: true,
-									})
-								</script>
-								<noscript
-									><div>
-										<img
-											src="https://mc.yandex.ru/watch/51944414"
-											style="position: absolute; left: -9999px"
-											alt=""
-										/></div
-								></noscript>
-								<!-- /Yandex.Metrika counter -->
-							</div>
-						</div>
-					</div>
-				</div>
+				></div>
 				<div
 					id="rec474401292"
 					class="r t-rec t-rec_pt_0 t-rec_pb_0"
@@ -756,11 +577,11 @@
 							</div>
 							<script>
 								function t_menuburger_init(recid) {
-									var rec = document.querySelector('#rec' + recid)
+									let rec = document.querySelector('#rec' + recid)
 									if (!rec) return
-									var burger = rec.querySelector('.t-menuburger')
+									let burger = rec.querySelector('.t-menuburger')
 									if (!burger) return
-									var isSecondStyle = burger.classList.contains('t-menuburger_second')
+									let isSecondStyle = burger.classList.contains('t-menuburger_second')
 									if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
 										burger.addEventListener('mouseenter', function () {
 											if (burger.classList.contains('t-menuburger-opened')) return
@@ -787,10 +608,10 @@
 											burger.classList.remove('t-menuburger-unhovered')
 										}
 									})
-									var menu = rec.querySelector('[data-menu="yes"]')
+									let menu = rec.querySelector('[data-menu="yes"]')
 									if (!menu) return
-									var menuLinks = menu.querySelectorAll('.t-menu__link-item')
-									var submenuClassList = [
+									let menuLinks = menu.querySelectorAll('.t-menu__link-item')
+									let submenuClassList = [
 										't978__menu-link_hook',
 										't978__tm-link',
 										't966__tm-link',
@@ -799,7 +620,7 @@
 									]
 									Array.prototype.forEach.call(menuLinks, function (link) {
 										link.addEventListener('click', function () {
-											var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+											let isSubmenuHook = submenuClassList.some(function (submenuClass) {
 												return link.classList.contains(submenuClass)
 											})
 											if (isSubmenuHook) return
@@ -817,6 +638,27 @@
 								})
 							</script>
 							<style>
+								.button-modal {
+									padding: 5px 0;
+									width: 100%;
+									margin-bottom: 15px;
+									color: #ffffff;
+									font-family: 'mplusroundedmuseo', Arial, sans-serif;
+									line-height: 1.55;
+									font-weight: 800;
+									border-radius: 9px;
+									cursor: pointer;
+									background-image: linear-gradient(
+										180deg,
+										rgba(245, 198, 137, 1) 0%,
+										rgba(235, 179, 76, 1) 97%
+									);
+									border-color: transparent;
+									border-style: solid;
+									transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+										border-color 0.2s ease-in-out;
+									box-shadow: 2px 2px 10px 2px rgba(5, 5, 5, 0.3);
+								}
 								.t-menuburger {
 									position: relative;
 									flex-shrink: 0;
@@ -1141,6 +983,12 @@
 												>Личный кабинет</a
 											>
 										</li>
+										<li class="t450__list_item" role="none">
+											<button class="button-modal button-reg">Зарегестрироваться</button>
+										</li>
+										<li class="t450__list_item" role="none">
+											<button class="button-modal button-auth">Войти</button>
+										</li>
 									</ul>
 								</nav>
 							</div>
@@ -1226,7 +1074,7 @@
 					</div>
 					<script>
 						t_onReady(function () {
-							var rec = document.querySelector('#rec474401292')
+							let rec = document.querySelector('#rec474401292')
 							if (!rec) return
 							rec.setAttribute('data-animationappear', 'off')
 							rec.style.opacity = 1
@@ -1263,54 +1111,7 @@
 				style=""
 				data-animationappear="off"
 				data-record-type="131"
-			>
-				<!-- T123 -->
-				<div class="t123">
-					<div class="t-container_100">
-						<div class="t-width t-width_100">
-							<!-- Yandex.Metrika counter -->
-							<script type="text/javascript">
-								;(function (m, e, t, r, i, k, a) {
-									m[i] =
-										m[i] ||
-										function () {
-											;(m[i].a = m[i].a || []).push(arguments)
-										}
-									m[i].l = 1 * new Date()
-									;(k = e.createElement(t)),
-										(a = e.getElementsByTagName(t)[0]),
-										(k.async = 1),
-										(k.src = r),
-										a.parentNode.insertBefore(k, a)
-								})(
-									window,
-									document,
-									'script',
-									'https://mc.yandex.ru/metrika/tag.js',
-									'ym'
-								)
-
-								ym(51944414, 'init', {
-									clickmap: true,
-									trackLinks: true,
-									accurateTrackBounce: true,
-									webvisor: true,
-									ecommerce: 'dataLayer',
-								})
-							</script>
-							<noscript
-								><div>
-									<img
-										src="https://mc.yandex.ru/watch/51944414"
-										style="position: absolute; left: -9999px"
-										alt=""
-									/></div
-							></noscript>
-							<!-- /Yandex.Metrika counter -->
-						</div>
-					</div>
-				</div>
-			</div>
+			></div>
 			<div
 				id="rec529430362"
 				class="r t-rec"
@@ -17211,7 +17012,7 @@
 				</div>
 				<script>
 					t_onReady(function () {
-						var rec = document.querySelector('#rec534853360')
+						let rec = document.querySelector('#rec534853360')
 						if (!rec) return
 						rec.setAttribute('data-animationappear', 'off')
 						rec.style.opacity = 1
@@ -17891,7 +17692,7 @@
 				</div>
 				<script>
 					t_onReady(function () {
-						var rec = document.querySelector('#rec516441861')
+						let rec = document.querySelector('#rec516441861')
 						if (!rec) return
 						rec.setAttribute('data-animationappear', 'off')
 						rec.style.opacity = 1
@@ -18018,7 +17819,7 @@
 				</div>
 				<script>
 					t_onReady(function () {
-						var rec = document.querySelector('#rec516441876')
+						let rec = document.querySelector('#rec516441876')
 						if (!rec) return
 						rec.setAttribute('data-animationappear', 'off')
 						rec.style.opacity = 1
@@ -18294,7 +18095,7 @@
 				</div>
 				<script>
 					t_onReady(function () {
-						var rec = document.querySelector('#rec516441879')
+						let rec = document.querySelector('#rec516441879')
 						if (!rec) return
 						rec.setAttribute('data-animationappear', 'off')
 						rec.style.opacity = 1
@@ -18537,7 +18338,7 @@
 				</div>
 				<script>
 					t_onReady(function () {
-						var rec = document.querySelector('#rec516441880')
+						let rec = document.querySelector('#rec516441880')
 						if (!rec) return
 						rec.setAttribute('data-animationappear', 'off')
 						rec.style.opacity = 1
@@ -18813,7 +18614,7 @@
 				</div>
 				<script>
 					t_onReady(function () {
-						var rec = document.querySelector('#rec516441881')
+						let rec = document.querySelector('#rec516441881')
 						if (!rec) return
 						rec.setAttribute('data-animationappear', 'off')
 						rec.style.opacity = 1
@@ -19056,7 +18857,7 @@
 				</div>
 				<script>
 					t_onReady(function () {
-						var rec = document.querySelector('#rec516441882')
+						let rec = document.querySelector('#rec516441882')
 						if (!rec) return
 						rec.setAttribute('data-animationappear', 'off')
 						rec.style.opacity = 1
@@ -19299,7 +19100,7 @@
 				</div>
 				<script>
 					t_onReady(function () {
-						var rec = document.querySelector('#rec516441883')
+						let rec = document.querySelector('#rec516441883')
 						if (!rec) return
 						rec.setAttribute('data-animationappear', 'off')
 						rec.style.opacity = 1
@@ -24001,9 +23802,9 @@
 									$('[href = "#sldpict"]').addClass('pictslider buttsld')
 
 									//Присваиваем переменной значение кол-ва наших фотографий
-									var sumpic = $("[href = '#sldpict']").length - 1
+									let sumpic = $("[href = '#sldpict']").length - 1
 									//Создаём переменную позиции слайдера
-									var numsld = sumpic
+									let numsld = sumpic
 									//Скрываем все слайды, кроме последнего
 									$('a.pictslider:not(:last)').hide()
 
@@ -24040,7 +23841,7 @@
 									function auto_play() {
 										$('.rightslider')[0].click()
 									}
-									var autoPlay = setInterval(auto_play, 4000)
+									let autoPlay = setInterval(auto_play, 4000)
 									$('.buttsld').hover(
 										function () {
 											clearInterval(autoPlay)
@@ -26214,7 +26015,7 @@
 											function () {
 												;(a[o].q = a[o].q || []).push(arguments)
 											}
-										var d = a.document,
+										let d = a.document,
 											s = d.createElement('script')
 										s.async = true
 										s.id = m + '_script'
@@ -26229,137 +26030,164 @@
 			</div>
 			<!--/footer-->
 		</div>
-		<script type="text/javascript" id="">
-			!(function (b, e, f, g, a, c, d) {
-				b.fbq ||
-					((a = b.fbq =
-						function () {
-							a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments)
-						}),
-					b._fbq || (b._fbq = a),
-					(a.push = a),
-					(a.loaded = !0),
-					(a.version = '2.0'),
-					(a.queue = []),
-					(c = e.createElement(f)),
-					(c.async = !0),
-					(c.src = g),
-					(d = e.getElementsByTagName(f)[0]),
-					d.parentNode.insertBefore(c, d))
-			})(
-				window,
-				document,
-				'script',
-				'https://connect.facebook.net/en_US/fbevents.js'
-			)
-			fbq('init', '384063819627334')
-			fbq('track', 'PageView')
-		</script>
-		<noscript>
-			<img
-				height="1"
-				width="1"
-				src="https://www.facebook.com/tr?id=384063819627334&amp;ev=PageView
-&amp;noscript=1"
-			/>
-		</noscript>
 
-		<script type="text/javascript" id="">
-			;(function (b, e, f, g, c, a, d) {
-				b[c] =
-					b[c] ||
-					function () {
-						;(b[c].a = b[c].a || []).push(arguments)
-					}
-				b[c].l = 1 * new Date()
-				for (a = 0; a < document.scripts.length; a++)
-					if (document.scripts[a].src === g) return
-				a = e.createElement(f)
-				d = e.getElementsByTagName(f)[0]
-				a.async = 1
-				a.src = g
-				d.parentNode.insertBefore(a, d)
-			})(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym')
-			ym(51944414, 'init', {
-				clickmap: !0,
-				trackLinks: !0,
-				accurateTrackBounce: !0,
-				webvisor: !0,
-				ecommerce: 'dataLayer',
+		<div class="modalBackground modalBackgroundAuth">
+			<div class="modalActive">
+				<div class="modalClose">✖</div>
+				<div class="modalWindow">
+					<form action="" autocomplete="off" name="" method="post">
+						<h2>Авторизация</h2>
+						<input type="text" placeholder="Введите логин" />
+						<input type="password" placeholder="Введите пароль" />
+						<button>Войти</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modalBackground modalBackgroundReg">
+			<div class="modalActive">
+				<div class="modalClose">✖</div>
+				<div class="modalWindow">
+					<form action="" autocomplete="off" name="" method="post">
+						<h2>Регистрация</h2>
+						<input type="text" placeholder="Введите логин" />
+						<input type="password" placeholder="Введите пароль" />
+						<button>Зарегестрироваться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			const buttonAuth = document.querySelector('.button-auth')
+			const buttonReg = document.querySelector('.button-reg')
+
+			const modalBackground = document.querySelectorAll('.modalBackground')
+			const modalBackgroundAuth = document.querySelector('.modalBackgroundAuth')
+			const modalBackgroundReg = document.querySelector('.modalBackgroundReg')
+			const modalClose = document.querySelectorAll('.modalClose')
+
+			const menu1 = document.querySelector('.t450__overlay')
+			const menu2 = document.querySelector('.t450')
+
+			buttonAuth.addEventListener('click', function (event) {
+				event.preventDefault()
+				modalBackgroundAuth.style.display = 'block'
+				menu1.classList.toggle('t450__menu_show')
+				menu2.classList.toggle('t450__menu_show')
+			})
+			buttonReg.addEventListener('click', function (event) {
+				event.preventDefault()
+				modalBackgroundReg.style.display = 'block'
+				menu1.classList.toggle('t450__menu_show')
+				menu2.classList.toggle('t450__menu_show')
+			})
+
+			modalClose[0].addEventListener('click', function () {
+				modalBackground[0].style.display = 'none'
+			})
+			modalClose[1].addEventListener('click', function () {
+				modalBackground[1].style.display = 'none'
 			})
 		</script>
-		<noscript
-			><div>
-				<img
-					src="https://mc.yandex.ru/watch/51944414"
-					style="position: absolute; left: -9999px"
-					alt=""
-				/></div
-		></noscript>
-		<!--/allrecords--><!-- Stat --><!-- Yandex.Metrika counter 51944414 -->
-		<script type="text/javascript" data-tilda-cookie-type="analytics">
-			setTimeout(function () {
-				;(function (m, e, t, r, i, k, a) {
-					m[i] =
-						m[i] ||
-						function () {
-							;(m[i].a = m[i].a || []).push(arguments)
-						}
-					m[i].l = 1 * new Date()
-					;(k = e.createElement(t)),
-						(a = e.getElementsByTagName(t)[0]),
-						(k.async = 1),
-						(k.src = r),
-						a.parentNode.insertBefore(k, a)
-				})(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym')
-				window.mainMetrikaId = 51944414
-				ym(window.mainMetrikaId, 'init', {
-					clickmap: true,
-					trackLinks: true,
-					accurateTrackBounce: true,
-					webvisor: true,
-					ecommerce: 'dataLayer',
-				})
-			}, 2000)
-		</script>
-		<noscript
-			><div>
-				<img
-					src="https://mc.yandex.ru/watch/51944414"
-					style="position: absolute; left: -9999px"
-					alt=""
-				/></div
-		></noscript>
-		<!-- /Yandex.Metrika counter -->
-		<script type="text/javascript">
-			if (!window.mainTracker) {
-				window.mainTracker = 'tilda'
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
 			}
-			setTimeout(function () {
-				;(function (d, w, k, o, g) {
-					var n = d.getElementsByTagName(o)[0],
-						s = d.createElement(o),
-						f = function () {
-							n.parentNode.insertBefore(s, n)
-						}
-					s.type = 'text/javascript'
-					s.async = true
-					s.key = k
-					s.id = 'tildastatscript'
-					s.src = g
-					if (w.opera == '[object Opera]') {
-						d.addEventListener('DOMContentLoaded', f, false)
-					} else {
-						f()
-					}
-				})(
-					document,
-					window,
-					'a673f79397d68325a35ee4a9815602ae',
-					'script',
-					'https://static.tildacdn.com/js/tilda-stat-1.0.min.js'
-				)
-			}, 2000)
-		</script>
+
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+			}
+
+			.modalBackground {
+				display: none;
+				background: rgba(0, 0, 0, 0.2);
+				position: fixed;
+				width: 100%;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				height: 100%;
+				cursor: pointer;
+				z-index: 1000;
+			}
+			.modalActive {
+				position: absolute;
+				width: 100%;
+				max-width: 450px;
+				max-height: 350px;
+				top: calc(50% - 150px);
+				left: 50%;
+				transform: translateX(-50%);
+				border-radius: 10px;
+				background: #f1f2f2;
+				cursor: default;
+				z-index: 1001;
+			}
+			.modalClose {
+				cursor: pointer;
+				position: absolute;
+				font-size: 18px;
+				right: 20px;
+				z-index: 500;
+				top: 15px;
+			}
+
+			.modalWindow {
+				padding: 20px;
+				padding-top: 30px;
+				width: 100%;
+				height: 100%;
+				position: relative;
+				width: 100%;
+				display: flex;
+				font-family: 'mplusroundedmuseo', Arial, sans-serif;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 30px;
+			}
+
+			.modalWindow form {
+				width: 100%;
+				max-width: 390px;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.modalWindow form h2 {
+				font-size: 25px;
+				font-weight: 700;
+				color: rgb(245, 138, 38);
+			}
+
+			.modalWindow form input {
+				width: 100%;
+				height: 40px;
+				padding-left: 20px;
+			}
+
+			.modalWindow form button {
+				width: 100%;
+				height: 40px;
+				border-radius: 10px;
+				background: linear-gradient(
+					180deg,
+					rgba(252, 194, 128, 1) 0%,
+					rgba(255, 144, 41, 1) 95%
+				);
+				border: none;
+				color: #fff;
+				cursor: pointer;
+			}
+		</style>
 	</body>
 </html>
