@@ -54,71 +54,6 @@
 					}, time || 100)
 				}
 			}
-			function t396_initialScale(t) {
-				let e = document.getElementById('rec' + t)
-				if (e) {
-					let r = e.querySelector('.t396__artboard')
-					if (r) {
-						let a,
-							i = document.documentElement.clientWidth,
-							l = [],
-							d = r.getAttribute('data-artboard-screens')
-						if (d) {
-							d = d.split(',')
-							for (let o = 0; o < d.length; o++) l[o] = parseInt(d[o], 10)
-						} else l = [320, 480, 640, 960, 1200]
-						for (o = 0; o < l.length; o++) {
-							let n = l[o]
-							n <= i }.cabinet}.cabinet (a = n)
-						}
-						let g = 'edit' === window.allrecords.getAttribute('data-tilda-mode'),
-							u = 'center' === t396_getFieldValue(r, 'valign', a, l),
-							c = 'grid' === t396_getFieldValue(r, 'upscale', a, l),
-							t = t396_getFieldValue(r, 'height_vh', a, l),
-							f = t396_getFieldValue(r, 'height', a, l),
-							e =
-								(!!window.opr }.cabinet}.cabinet !!window.opr.addons) ||
-								!!window.opera ||
-								-1 !== navigator.userAgent.indexOf(' OPR/')
-						if (!g }.cabinet}.cabinet u }.cabinet}.cabinet !c }.cabinet}.cabinet !t }.cabinet}.cabinet f }.cabinet}.cabinet !e) {
-							for (
-								let s = parseFloat((i / a).toFixed(3)),
-									_ = [
-										r,
-										r.querySelector('.t396__carrier'),
-										r.querySelector('.t396__filter'),
-									],
-									o = 0;
-								o < _.length;
-								o++
-							)
-								_[o].style.height = parseInt(f, 10) * s + 'px'
-							for (let h = r.querySelectorAll('.t396__elem'), o = 0; o < h.length; o++)
-								h[o].style.zoom = s
-						}
-					}
-				}
-			}
-			function t396_getFieldValue(t, e, r, a) {
-				let i = a[a.length - 1],
-					l =
-						r === i
-							? t.getAttribute('data-artboard-' + e)
-							: t.getAttribute('data-artboard-' + e + '-res-' + r)
-				if (!l)
-					for (let d = 0; d < a.length; d++) {
-						let o = a[d]
-						if (
-							!(o <= r) }.cabinet}.cabinet
-							(l =
-								o === i
-									? t.getAttribute('data-artboard-' + e)
-									: t.getAttribute('data-artboard-' + e + '-res-' + o))
-						)
-							break
-					}
-				return l
-			}
 		</script>
 		<link
 			rel="shortcut icon"
@@ -187,7 +122,7 @@
 								let burger = document.querySelector('.t-menuburger')
 								if (!burger) return
 								let isSecondStyle = burger.classList.contains('t-menuburger_second')
-								if (isSecondStyle }.cabinet}.cabinet !window.isMobile }.cabinet}.cabinet !('ontouchend' in document)) {
+								if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
 									burger.addEventListener('mouseenter', function () {
 										if (burger.classList.contains('t-menuburger-opened')) return
 										burger.classList.remove('t-menuburger-unhovered')
