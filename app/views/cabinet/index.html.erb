@@ -91,6 +91,8 @@
     />
 </head>
 <body>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 <div class="wrapper">
   <div
     id="rec474401292"
@@ -626,12 +628,22 @@
     <div class="cabinet__body">
       <div class="cabinet__indo">
         <div class="cabinet__group">
-          <div class="cabinet__name">Email:</div>
-          <div class="cabinet__data">example@gmail.com</div>
+          <% if Current.user %>
+              <div class="cabinet__name">Email:</div>
+              <div class="cabinet__data"><%= Current.user.email %></div>
+          <% else %>
+            <div class="cabinet__name">Email:</div>
+            <div class="cabinet__data">example@gmail.com</div>
+          <% end %>
         </div>
         <div class="cabinet__group">
-          <div class="cabinet__name">Пароль:</div>
-          <div class="cabinet__data">qwerty12345</div>
+          <% if Current.user %>
+            <div class="cabinet__name">Пароль:</div>
+            <div class="cabinet__data"><%= Current.user.password %></div>
+          <% else %>
+            <div class="cabinet__name">Пароль:</div>
+            <div class="cabinet__data">qwerty12345</div>
+          <% end %>
         </div>
         <button class="cabinet__button">Пополнить счет</button>
       </div>

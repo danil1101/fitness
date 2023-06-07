@@ -6,8 +6,8 @@ Rails.application.routes.draw do
 
   get 'courses', to: 'main#courses'
 
-  post 'sign_up', to: 'registrations#create'
-  post 'sign_in', to: 'sessions#create', as: 'log_in'
+  post 'sign_up', to: 'registration#create'
+  post 'sign_in', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
   get 'cabinet', to: 'cabinet#index'

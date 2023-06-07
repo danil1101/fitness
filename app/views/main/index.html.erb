@@ -881,6 +881,8 @@
   </style>
 </head>
 <body class="t-body" style="margin: 0px">
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 <!--allrecords-->
 <div
   id="allrecords"
@@ -22574,12 +22576,12 @@
   <div class="modalActive">
     <div class="modalClose">✖</div>
     <div class="modalWindow">
-      <form action="" autocomplete="off" name="" method="post">
+      <%= form_with url: sign_in_path do |f| %>
         <h2>Авторизация</h2>
-        <input type="text" placeholder="Введите логин" />
-        <input type="password" placeholder="Введите пароль" />
-        <button>Войти</button>
-      </form>
+        <%= f.text_field :email, placeholder: "Введите email" %>
+        <%= f.password_field :password, placeholder:"Введите пароль" %>
+        <button type="submit">Войти</button>
+      <% end %>
     </div>
   </div>
 </div>
@@ -22587,17 +22589,14 @@
   <div class="modalActive">
     <div class="modalClose">✖</div>
     <div class="modalWindow">
-      <form action="" autocomplete="off" name="" method="post">
+      <%= form_with model: @user, url: sign_up_path do |f| %>
         <h2>Регистрация</h2>
         <br>
-        <%= form_with url: sign_up_path do |f| %>
           <%= f.text_field :email, placeholder: "Введите email" %>
           <%= f.password_field :password, placeholder:"Введите пароль" %>
           <%= f.password_field :password_confirmation, placeholder:"Подтверждение пароля" %>
-          <%= f.submit 'Зарегестрироваться' %>
-          <button>Зарегестрироваться</button>
-          <% end %>
-      </form>
+          <button type="submit">Зарегестрироваться</button>
+      <% end %>
     </div>
   </div>
 </div>

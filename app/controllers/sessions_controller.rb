@@ -5,15 +5,15 @@ class SessionsController < ApplicationController
     if user.present? && user.authenticate(params[:password])
       # sets up user.id sessions
       session[:user_id] = user.id
-      redirect_to root_path, notice: 'Logged in successfully'
+      redirect_to cabinet_path, notice: 'Успешная авторизация'
     else
-      flash.now[:alert] = 'Invalid email or password'
-      redirect_to root_path, alert: 'Invalid email or password'
+      flash.now[:alert] = 'Неверный логин или пароль'
+      redirect_to root_path, alert: 'Неверный логин или пароль'
     end
   end
   def destroy
     # deletes user session
     session[:user_id] = nil
-    redirect_to root_path, notice: 'Logged Out'
+    redirect_to root_path, notice: 'Выход'
   end
 end
