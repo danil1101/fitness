@@ -222,6 +222,26 @@
               }
           return l
       }
+
+      const notice = document.querySelector('.notice')
+        const alert = document.querySelector('.alert')
+      console.log(notice)
+
+
+        if (notice?.innerHTML === "") {
+          return
+        } else {
+          setTimeout(() => {
+            notice.innerHTML = ""
+          }, 3000);
+        }
+        if (alert?.innerHTML === "") {
+          return
+        } else {
+          setTimeout(() => {
+            alert.innerHTML = ""
+          }, 3000);
+        }
   </script>
   <script
     src="./asstes/2/jquery-1.10.2.min.js.Без названия"
@@ -26070,13 +26090,13 @@
     const menu1 = document.querySelector('.t450__overlay')
     const menu2 = document.querySelector('.t450')
 
-    buttonAuth.addEventListener('click', function (event) {
+    buttonAuth?.addEventListener('click', function (event) {
         event.preventDefault()
         modalBackgroundAuth.style.display = 'block'
         menu1.classList.toggle('t450__menu_show')
         menu2.classList.toggle('t450__menu_show')
     })
-    buttonReg.addEventListener('click', function (event) {
+    buttonReg?.addEventListener('click', function (event) {
         event.preventDefault()
         modalBackgroundReg.style.display = 'block'
         menu1.classList.toggle('t450__menu_show')
