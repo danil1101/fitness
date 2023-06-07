@@ -223,30 +223,7 @@
           return l
       }
 
-      const notice = document.querySelector('.notice')
-      const alert = document.querySelector('.alert')
-console.log(notice)
 
-        if (notice?.innerHTML === "") {
-             notice.classList.remove('active')
-          return
-        } else {
-        notice.classList.add('active')
-          setTimeout(() => {
-            notice.innerHTML = ""
-             notice.classList.remove('active')
-          }, 3000);
-        }
-        if (alert?.innerHTML === "") {
-            alert.classList.remove('active')
-          return
-        } else {
-            alert.classList.add('active')
-          setTimeout(() => {
-            alert.innerHTML = ""
-             alert.classList.remove('active')
-          }, 3000);
-        }
   </script>
   <script
     src="./asstes/2/jquery-1.10.2.min.js.Без названия"
