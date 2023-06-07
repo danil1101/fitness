@@ -1336,7 +1336,7 @@
 										<li class="t450__list_item" role="none">
 											<a
 												class="t-menu__link-item"
-												href="/cabinet.html"
+												href="./cabinet.html"
 												target="_blank"
 												role="menuitem"
 												tabindex="0"
@@ -22624,9 +22624,11 @@
 
 			modalClose[0].addEventListener('click', function () {
 				modalBackground[0].style.display = 'none'
+				document.body.classList.remove('t450__body_menushowed')
 			})
 			modalClose[1].addEventListener('click', function () {
 				modalBackground[1].style.display = 'none'
+				document.body.classList.remove('t450__body_menushowed')
 			})
 		</script>
 		<style>
