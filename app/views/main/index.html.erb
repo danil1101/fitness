@@ -150,6 +150,29 @@
               }, time || 100)
           }
       }
+      const notice = document.querySelector('.notice')
+      const alert = document.querySelector('.alert')
+
+      if (notice?.innerHTML === "") {
+          notice.style.display = 'none'
+          return
+      } else {
+          setTimeout(() => {
+              notice.style.display = 'none'
+
+          }, 3000);
+      }
+      if (alert?.innerHTML === "") {
+          notice.style.display = 'none'
+
+          return
+      } else {
+
+          setTimeout(() => {
+              notice.style.display = 'none'
+
+          }, 3000);
+      }
       function t396_initialScale(t) {
           let e = document.getElementById('rec' + t)
           if (e) {
@@ -279,6 +302,20 @@
     src="./asstes/1/button.js"
   ></script>
   <style>
+      .notice,
+      .alert {
+          position: fixed;
+          color: rgb(245, 138, 38);
+          top: 40px;
+          left: 50%;
+          font-family: 'mplusroundedmuseo', Arial, sans-serif;
+          transform: translateX(-50%);
+          z-index: 1000;
+          font-weight: 700;
+          background: #dbdbdb;
+          padding: 15px 30px;
+          border-radius: 10px;
+      }
       .t396 .t-animate[data-animate-style='fadein'],
       .t396 .t-animate[data-animate-style='fadeinup'],
       .t396 .t-animate[data-animate-style='fadeindown'],

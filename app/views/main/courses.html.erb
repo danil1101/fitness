@@ -285,9 +285,46 @@
 
   <script type="text/javascript">
       window.dataLayer = window.dataLayer || []
+      const notice = document.querySelector('.notice')
+      const alert = document.querySelector('.alert')
+
+      if (notice?.innerHTML === "") {
+          notice.style.display = 'none'
+          return
+      } else {
+          setTimeout(() => {
+              notice.style.display = 'none'
+
+          }, 3000);
+      }
+      if (alert?.innerHTML === "") {
+          alert.style.display = 'none'
+
+          return
+      } else {
+
+          setTimeout(() => {
+              alert.style.display = 'none'
+
+          }, 3000);
+      }
   </script>
 
   <style class="sbs-anim-keyframes">
+      .notice,
+      .alert {
+          position: fixed;
+          color: rgb(245, 138, 38);
+          top: 40px;
+          left: 50%;
+          font-family: 'mplusroundedmuseo', Arial, sans-serif;
+          transform: translateX(-50%);
+          z-index: 1000;
+          font-weight: 700;
+          background: #dbdbdb;
+          padding: 15px 30px;
+          border-radius: 10px;
+      }
       .t-sbs-anim_started #sbs-529430362-1671528506556 {
           animation: sbs-529430362-1671528506556 1s infinite linear;
           backface-visibility: hidden;
