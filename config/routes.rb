@@ -5,9 +5,10 @@ Rails.application.routes.draw do
   root "main#index"
 
   get 'courses', to: 'main#courses'
+  get 'buy', to: 'main#buy'
 
-  post 'sign_up', to: 'registrations#create'
-  post 'sign_in', to: 'sessions#create', as: 'log_in'
+  post 'sign_up', to: 'registration#create'
+  post 'sign_in', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
   get 'cabinet', to: 'cabinet#index'

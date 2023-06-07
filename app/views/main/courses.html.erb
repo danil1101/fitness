@@ -536,6 +536,8 @@
   </style>
 </head>
 <body class="t-body" style="margin: 0px">
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 <!--allrecords-->
 <div
   id="allrecords"
@@ -982,7 +984,7 @@
                 <li class="t450__list_item" role="none">
                   <a
                     class="t-menu__link-item"
-                    href="./fitnesscourses.html"
+                    href="/courses"
                     role="menuitem"
                     tabindex="0"
                     data-menu-submenu-hook=""
@@ -1003,12 +1005,14 @@
                   >Личный кабинет</a
                   >
                 </li>
+                <% if !Current.user %>
                 <li class="t450__list_item" role="none">
                   <button class="button-modal button-reg">Зарегестрироваться</button>
                 </li>
                 <li class="t450__list_item" role="none">
                   <button class="button-modal button-auth">Войти</button>
                 </li>
+                  <% end %>
               </ul>
             </nav>
           </div>
@@ -9366,7 +9370,7 @@
           data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits"
           style="top: 435px; left: 215.5px; width: 302px; height: 49px"
         >
-          <a class="tn-atom" href="/nutritionpro">Купить</a>
+          <a class="tn-atom" href="/buy">Купить</a>
         </div>
         <div
           class="t396__elem tn-elem tn-elem__5183525091669272829001"
@@ -9720,7 +9724,7 @@
           data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits"
           style="top: 435px; left: 614.5px; width: 302px; height: 49px"
         >
-          <a class="tn-atom" href="/stretch">Купить</a>
+          <a class="tn-atom" href="/buy">Купить</a>
         </div>
 
         <div
@@ -10076,7 +10080,7 @@
           data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits"
           style="top: 435px; left: 1014.5px; width: 302px; height: 49px"
         >
-          <a class="tn-atom" href="/female">Купить</a>
+          <a class="tn-atom" href="/buy">Купить</a>
         </div>
         <div
           class="t396__elem tn-elem tn-elem__5183525091669282865235"
@@ -10486,7 +10490,7 @@
           data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits"
           style="top: 983px; left: 215.5px; width: 302px; height: 49px"
         >
-          <a class="tn-atom" href="#popup:checklists">Купить</a>
+          <a class="tn-atom" href="/buy">Купить</a>
         </div>
         <div
           class="t396__elem tn-elem tn-elem__5183525091669283825018"
@@ -10838,7 +10842,7 @@
           data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits"
           style="top: 983px; left: 614.5px; width: 302px; height: 49px"
         >
-          <a class="tn-atom" href="/myofascial">Купить</a>
+          <a class="tn-atom" href="/buy">Купить</a>
         </div>
         <div
           class="t396__elem tn-elem tn-elem__5183525091669283825350"
@@ -11220,7 +11224,7 @@
           data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits"
           style="top: 983px; left: 1014.5px; width: 302px; height: 49px"
         >
-          <a class="tn-atom" href="/strong">Купить</a>
+          <a class="tn-atom" href="/buy">Купить</a>
         </div>
         <div
           class="t396__elem tn-elem tn-elem__5183525091669283825700"
@@ -19402,6 +19406,7 @@
               left: calc(50% - 480px + 479px);
           }
       }
+
       @media screen and (max-width: 959px) {
           #rec516441884 .tn-elem[data-elem-id='1619344624984'] {
               top: 416px;

@@ -91,6 +91,8 @@
     />
 </head>
 <body>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 <div class="wrapper">
   <div
     id="rec474401292"
@@ -217,6 +219,7 @@
             .t-menuburger span:nth-child(3) {
                 top: 8px;
             }
+
             .t-menuburger span:nth-child(4) {
                 top: 16px;
             }
@@ -626,16 +629,26 @@
     <div class="cabinet__body">
       <div class="cabinet__indo">
         <div class="cabinet__group">
-          <div class="cabinet__name">Email:</div>
-          <div class="cabinet__data">example@gmail.com</div>
+          <% if Current.user %>
+              <div class="cabinet__name">Email:</div>
+              <div class="cabinet__data"><%= Current.user.email %></div>
+          <% else %>
+            <div class="cabinet__name">Email:</div>
+            <div class="cabinet__data">example@gmail.com</div>
+          <% end %>
         </div>
         <div class="cabinet__group">
-          <div class="cabinet__name">Пароль:</div>
-          <div class="cabinet__data">qwerty12345</div>
+          <% if Current.user %>
+            <div class="cabinet__name">Пароль:</div>
+            <div class="cabinet__data"><%= Current.user.password %></div>
+          <% else %>
+            <div class="cabinet__name">Пароль:</div>
+            <div class="cabinet__data">qwerty12345</div>
+          <% end %>
         </div>
         <button class="cabinet__button">Пополнить счет</button>
       </div>
-      <div class="cabinet__account">Баланс: <span>1000 $</span></div>
+      <div class="cabinet__account">Баланс: <span>0 $</span></div>
     </div>
   </div>
   <style>
