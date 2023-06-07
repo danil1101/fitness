@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root "main#index"
 
   get 'courses', to: 'main#courses'
+  get 'buy', to: 'main#buy'
 
   post 'sign_up', to: 'registration#create'
   post 'sign_in', to: 'sessions#create'

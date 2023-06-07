@@ -6,4 +6,8 @@ class MainController < ApplicationController
   def courses
     @user = User.new
   end
+
+  def buy
+    redirect_to courses_path, alert: 'Не достаточно денег на счете'
+  end
 end
