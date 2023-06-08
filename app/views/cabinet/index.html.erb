@@ -634,10 +634,10 @@ const notice = document.querySelector('.notice')
         <div class="cabinet__group">
           <% if Current.user %>
             <div class="cabinet__name">Пароль:</div>
-            <div class="cabinet__data"><%= Current.user.password || '******' %></div>
+            <div class="cabinet__data"><%= Current.user.password || '********' %></div>
           <% else %>
             <div class="cabinet__name">Пароль:</div>
-            <div class="cabinet__data">******</div>
+            <div class="cabinet__data">********</div>
           <% end %>
         </div>
         <button class="cabinet__button">Пополнить счет</button>
