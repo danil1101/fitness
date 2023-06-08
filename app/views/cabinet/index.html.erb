@@ -628,16 +628,16 @@ const notice = document.querySelector('.notice')
               <div class="cabinet__data"><%= Current.user.email %></div>
           <% else %>
             <div class="cabinet__name">Email:</div>
-            <div class="cabinet__data">example@gmail.com</div>
+            <div class="cabinet__data">name@gmail.com</div>
           <% end %>
         </div>
         <div class="cabinet__group">
           <% if Current.user %>
             <div class="cabinet__name">Пароль:</div>
-            <div class="cabinet__data"><%= Current.user.password %></div>
+            <div class="cabinet__data"><%= Current.user.password || '******' %></div>
           <% else %>
             <div class="cabinet__name">Пароль:</div>
-            <div class="cabinet__data">qwerty12345</div>
+            <div class="cabinet__data">******</div>
           <% end %>
         </div>
         <button class="cabinet__button">Пополнить счет</button>
@@ -669,7 +669,7 @@ const notice = document.querySelector('.notice')
 					line-height: 1;
 					@media (max-width: 768.98px) {
 						font-size: 36px;
-						margin-top: 75px;
+						margin-top: 85px;
 						margin-bottom: 30px;
 					}
 					@media (max-width: 475px) {
