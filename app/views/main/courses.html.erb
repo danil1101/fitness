@@ -520,6 +520,32 @@
 <body class="t-body" style="margin: 0px">
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
+<script type="text/javascript">
+const notice = document.querySelector('.notice')
+      const alert = document.querySelector('.alert')
+        if (notice?.innerHTML === "") {
+             notice.style.display = 'none'
+          return
+        } else {
+          setTimeout(() => {
+                notice.style.display = 'none'
+     
+          }, 3000);
+        }
+        if (alert?.innerHTML === "") {
+               alert.style.display = 'none'
+        
+          return
+        } else {
+         
+          setTimeout(() => {
+               alert.style.display = 'none'
+        
+          }, 3000);
+        }
+
+</script>
+
 <!--allrecords-->
 <div
   id="allrecords"
@@ -9405,11 +9431,7 @@
           style="left: 379.5px; top: 265px; width: 17px"
         >
           <div class="tn-atom">
-            <img
-              class="tn-atom__img t-img"
-              data-original="https://static.tildacdn.com/tild6531-3031-4564-b938-303861393362/user.svg"
-              imgfield="tn_img_1669273328818"
-              />
+            $
           </div>
         </div>
         <div
