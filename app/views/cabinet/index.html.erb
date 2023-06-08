@@ -655,29 +655,52 @@ const notice = document.querySelector('.notice')
           font-family: 'mplusroundedmuseo', Arial, sans-serif;
           flex-direction: column;
           align-items: center;
+          @media (max-width: 768.98px) {
+						padding: 0 20px;
+					}
       }
       .cabinet__title {
-          margin-top: 50px;
-          font-size: 50px;
-          font-weight: 700;
-          color: rgb(245, 138, 38);
-          margin-bottom: 50px;
-      }
-      .cabinet__body {
-          display: flex;
-          max-width: 800px;
-          width: 100%;
-          justify-content: space-between;
-      }
-      .cabinet__indo {
-          display: flex;
-          flex-direction: column;
-          gap: 25px;
-      }
+					margin-top: 50px;
+					margin-bottom: 50px;
+					text-align: center;
+					font-size: 50px;
+					font-weight: 700;
+					color: rgb(245, 138, 38);
+					line-height: 1;
+					@media (max-width: 768.98px) {
+						font-size: 36px;
+						margin-top: 75px;
+						margin-bottom: 30px;
+					}
+					@media (max-width: 475px) {
+						font-size: 32px;
+					}
+				}
+				.cabinet__body {
+					display: flex;
+					max-width: 800px;
+					width: 100%;
+					justify-content: space-between;
+					@media (max-width: 768.98px) {
+						flex-direction: column;
+					}
+				}
+				.cabinet__indo {
+					display: flex;
+					flex-direction: column;
+					gap: 25px;
+					@media (max-width: 768.98px) {
+						order: 2;
+					}
+				}
       .cabinet__group {
           display: flex;
           align-items: center;
           gap: 20px;
+          @media (max-width: 768.98px) {
+						margin-top: 20px;
+					}
+          
       }
       .cabinet__name {
           color: #945b43;
@@ -719,6 +742,10 @@ const notice = document.querySelector('.notice')
           font-size: 19px;
           line-height: 1.55;
           font-weight: 600;
+          @media (max-width: 768.98px) {
+						order: 1;
+						margin-bottom: 25px;
+					}
       }
 
       .cabinet__account span {
